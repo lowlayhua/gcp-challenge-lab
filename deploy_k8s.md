@@ -35,3 +35,7 @@ EOF
 
 # Task 2: Test the created Docker image
 - `docker run -it --rm -d -p 8080:8080 --name valkyrie-app gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3`
+
+# Task 3: Push the Docker image in the Container Repository
+- `gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3`
+- 
