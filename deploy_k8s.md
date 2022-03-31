@@ -10,10 +10,14 @@ Pushing updates onto Kubernetes.
 Automating deployments to Kubernetes using Jenkins.
 
 # Task 1: Create a Docker image and store the Dockerfile
+
+### Download sourcecode
 - `gsutil cat gs://cloud-training/gsp318/marking/setup_marking.sh | bash`
 - `gcloud source repos clone valkyrie-app`
+
+### Create Dockerfile
 - ` cd valkyrie-app`
-- create Dockerfile
+
 ```
 cat > Dockerfile <<EOF
 FROM golang:1.10
