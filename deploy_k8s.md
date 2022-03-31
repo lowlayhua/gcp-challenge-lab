@@ -23,13 +23,9 @@ RUN go install -v
 ENTRYPOINT ["app","-single=true","-port=8080"]
 EOF
 ```
-- Build
-`docker build -t valkyrie-app:v0.0.3 .`
+### Build
+- `docker build -t valkyrie-app:v0.0.3 .`
 
-`docker tag valkyrie-app:v0.0.3 gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3`
+- `docker tag valkyrie-app:v0.0.3 gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3`
 
-You will see this if success.
-```
-student_00_e06df77f3641@cloudshell:~/valkyrie-app (qwiklabs-gcp-03-afd404de42f8)$ docker tag valkyrie-app:v0.0.3 gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3
-```
 - `docker run -it --rm -d -p 8080:8080 --name valkyrie-app gcr.io/qwiklabs-gcp-03-afd404de42f8/valkyrie-app:v0.0.3`
