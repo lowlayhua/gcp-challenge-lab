@@ -18,10 +18,13 @@ https://cloud.google.com/iam/docs/service-accounts-create
 - After the resource is created, you cannot change which service account is attached to the resource.
 - Compute Engine instances are an exception to this rule; you can change which service account is attached to an instance as needed.
 
-  # Configure for a resource in the same project
+# Configure for a resource in the same project
   Before you attach a service account to another resource in the same project,
   grant roles to the service account so it can access the appropriate resources, just as you would grant roles to any other principal.
 
-  # Configure for a resource in a different project
+# Configure for a resource in a different project
   - https://cloud.google.com/iam/docs/attach-service-accounts
   - gcp/looker-SA.md 
+
+# Best Practise
+https://cloud.google.com/iam/docs/best-practices-service-accounts
