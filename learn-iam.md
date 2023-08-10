@@ -22,4 +22,6 @@ https://cloud.google.com/iam/docs/service-accounts-create
   Before you attach a service account to another resource in the same project,
   grant roles to the service account so it can access the appropriate resources, just as you would grant roles to any other principal.
 
-  # 
+  # Configure for a resource in a different project
+  - https://cloud.google.com/iam/docs/attach-service-accounts
+  - gcp/looker-SA.md 
